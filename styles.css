@@ -324,7 +324,17 @@
 
 
 @media (max-width: 768px) {
-
+  .history-info {
+    text-align: center;
+    width: auto;
+  }
+  .history-info p {
+    font-size: 10px;
+    text-align: justify;
+  }
+  .gallery-item img{
+    width: 200px;
+  }
   .nav-links2 {
     display: block;
   }
@@ -877,6 +887,10 @@ input[type="submit"]:hover {
 
 @media (max-width: 768px) {
 
+  .LPButtons{
+    display: none;
+    width: 80%;
+  }
   .landingpage {
       flex-direction: column;
       flex-wrap: nowrap;
@@ -920,7 +934,7 @@ input[type="submit"]:hover {
   }
 
   .left-content2 h1 {
-    font-size: 25px;
+    font-size: 15px;
   }
   .video-element{
     height: 100%;
@@ -928,7 +942,7 @@ input[type="submit"]:hover {
   }
 
   .left-content h1 {
-    font-size: 60px
+    font-size: 35px
   }
   .explore-button {
     font-size: 14px;
@@ -939,6 +953,7 @@ input[type="submit"]:hover {
     text-align: center;
   }
   .picture-gallery {
+ 
     width: 100%;
     display: flex;
     justify-content: center;
@@ -948,9 +963,17 @@ input[type="submit"]:hover {
   }
 
   .picture-gallery img {
-    height: 50%;
-    width: calc(33.33% - 20px); /* Adjust for 3 images in a row with spacing */
+    height: 100%;
+    width: 100% calc(55.33% - 1px); /* Adjust for 3 images in a row with spacing */
     margin: 5px; /* Adjust for better spacing */
+  }
+
+  .googlemap{
+    display: none;
+  }
+
+  .leftvid, .leftmap{
+    display: none;
   }
 }
 
@@ -1076,7 +1099,7 @@ img {
   }
   .history-info,
   .history-links {
-      width: 90%;
+      width: auto;
   }
 
 }

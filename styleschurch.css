@@ -53,9 +53,34 @@
   }
   
   @media (max-width: 768px) {
-  .placespage{
-    height: auto;
-  }
+    .placespage {
+      height: auto;
+    }
+    .image-container img {
+      max-width: 100%; /* Adjust the image size for mobile screens */
+    }
+    .profilechurch {
+      max-width: 100%; /* Adjust the size of profile church image for mobile screens */
+      margin-left: 0; /* Reset margin for better alignment */
+    }
+    p {
+      font-size: 12px;
+      text-align: justify; /* Aligns the text content of the <p> tag */
+
+    }
+
+    h2 {
+      font-size: 25px;
+      text-align: center;
+    }
+    
+    h3 {
+      font-size: 20px;
+      
+    }
+    .coffeelakinamanneto{
+      height: 200px;
+    }
   }
 
   /* css ng park */
