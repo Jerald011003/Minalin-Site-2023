@@ -560,11 +560,11 @@
     padding: 15px; /* Adjust padding for smaller screens */
     top: 50%; /* Reposition to the center vertically */
     left: 50%; /* Reposition to the center horizontally */
-    transform: translate(-300%, 600%) scale(1);
+    transform: translate(-100%, 600%) scale(1);
   }
 
   .popup .close-btn {
-    font-size: 20px; /* Adjust close button size for smaller screens */
+    font-size: 10px; /* Adjust close button size for smaller screens */
     width: 25px;
     height: 25px;
     line-height: 25px;
@@ -581,16 +581,20 @@
      padding: 15px; /* Adjust padding for smaller screens */
      top: 50%; /* Reposition to the center vertically */
      left: 50%; /* Reposition to the center horizontally */
-     transform: translate(-300%, 600%) scale(1);
-   }
+     transform: translate(-100%, 600%) scale(1);
+    }
  
    .popup .close-btn {
-     font-size: 20px; /* Adjust close button size for smaller screens */
-     width: 25px;
-     height: 25px;
+     font-size: 10px; /* Adjust close button size for smaller screens */
+     width: 15px;
+     height: 15px;
      line-height: 25px;
      right: 15px;
      top: 15px;
+   }
+
+   .close-btn {
+    margin-right: 29px;
    }
  }
 
