@@ -1,0 +1,427 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+<link rel="stylesheet" href="styles.css">
+<title>Minalin</title>
+</head>
+
+
+<body>
+  
+    
+    <main>
+        <div class="container">
+        <nav class="navbar" style="
+        background-image: url('images/ImageF.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+     " >
+            <div class="logo" >
+                <h2 style="margin-right: 20px; font-weight: lighter; font-size: 20px; font-family: 'Lobster', cursive;">
+                    <a href="index.html" style="text-decoration: none; color: inherit; color: white;">Minalin</a>
+                </h2>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                
+                <li><a style="color: white;" href="index.html" onclick="closeNav()" class="active">Home</a></li>
+                <li class="has-submenu">
+                    <a style="color: white;" href="#places">Places<span class="arrow-icon">&#9660;</span></a>
+                    <ul class="submenu">
+                        <!-- <li class="has-submenu2">
+                            <a href="#about1" class="has-arrow">Overview<span class="arrow-icon2"> &#9660;</span></a>
+                            <ul class="submenu2">
+                                <li><a href="#sub-item1">History</a></li>
+                                <li><a href="#sub-item2">Vision, Mission, Core Values, and Mandate</a></li>
+                            </ul>
+                        </li> -->
+                        <li><a href="church.html">Church</a></li>
+                        <li><a href="park.html">Park</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="coffeeshop.html">Coffee Shops</a></li>
+                        <li><a href="localfood.html">Local Food</a></li>
+                    </ul>
+                </li>
+                <li><a style="color: white;" href="tour.html" onclick="closeNav()" >Tour</a></li>
+                <li><a style="color: white;" href="gallery.html" onclick="closeNav()" >Gallery</a></li>
+                <li><a style="color: white;" href="history.html"  onclick="closeNav()">History</a></li>
+                <li><a style="color: white;" href="municipal.html"  onclick="closeNav()">Municipality</a></li>
+                <li><a style="color: white;" href="about.html"  onclick="closeNav()">About</a></li>
+
+                
+                <li  class="search"><input ></li>
+
+                
+            </ul>
+            <div class="menu-container" >
+                <div> <ul class="nav-links2" id="navLinks">
+
+            <li class="has-submenu" onclick="toggleAccessibility()">
+                <a style="color: white; " href="#portfolio"><span><i class="fa fa-universal-access fa-1x" ></i></span> Accessibility</a>
+                <ul class="submenu" id="accessibilitySubmenu">
+                    <li><a href="#accessibilitystatement2" onclick="toggleAccess2()">Accessibility Statement</a>
+                        <div class="popup" id="popup-12">
+                            <div class="overlay">
+                                <div class="content">
+                                    <div class="close-btn" onclick="toggleAccess2()">
+                                        &times;
+                                    </div>
+                                    <textarea rows="10" cols="45"
+                                        readonly>This website adopts the Web Content Accessibility Guidelines (WCAG 2.0) as the accessibility standard for all its related web development and services. WCAG 2.0 is also an international standard, ISO 40500. This certifies it as a stable and referenceable technical standard. 
+
+                                        WCAG 2.0 contains 12 guidelines organized under 4 principles: Perceivable, Operable, Understandable, and Robust (POUR for short). There are testable success criteria for each guideline. Compliance to these criteria is measured in three levels: A, AA, or AAA. A guide to understanding and implementing Web Content Accessibility Guidelines 2.0 is available at: https://www.w3.org/TR/UNDERSTANDING-WCAG20/
+                                        
+                                        Accessibility Features
+                                        
+                                        Shortcut Keys Combination Activation Combination keys used for each browser.
+                                        
+                                            Chrome for Linux press (Alt+Shift+shortcut_key) 
+                                            Chrome for Windows press (Alt+shortcut_key) 
+                                            For Firefox press (Alt+Shift+shortcut_key) 
+                                            For Internet Explorer press (Alt+Shift+shortcut_key) then press (enter)
+                                            On Mac OS press (Ctrl+Opt+shortcut_key)
+                                        
+                                            Accessibility Statement (Combination + 0): Statement page that will show the available accessibility keys. 
+                                            Home Page (Combination + H): Accessibility key for redirecting to homepage. 
+                                            Main Content (Combination + R): Shortcut for viewing the content section of the current page. 
+                                            FAQ (Combination + Q): Shortcut for FAQ page. 
+                                            Contact (Combination + C): Shortcut for contact page or form inquiries. 
+                                            Feedback (Combination + K): Shortcut for feedback page. 
+                                            Site Map (Combination + M): Shortcut for site map (footer agency) section of the page. 
+                                            Search (Combination + S): Shortcut for search page. 
+                                        
+                                        Press esc, or click the close the button to close this dialog box.</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#tts2" onclick="togglePopup2('textToSpeak2')">Text to Speech</a>
+                        <div class="popup" id="popup-textToSpeak2">
+                            <div class="overlay">
+                                <div class="content">
+                                    <div class="close-btn" onclick="togglePopup2('textToSpeak2')">
+                                        &times;
+                                    </div>
+                                    <textarea id="textToSpeak2" rows="10" cols="45" placeholder="Type your text here..."></textarea>
+                                    <button onClick="speakText2('textToSpeak2')">Speak</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li><a href="#highcontrast2" onclick="toggleHighContrast2()">High Contrast</a></li>
+                </ul>
+            </li>
+        </ul></div>
+                <div  class="menu-label" >Menu</div>
+                <div class="hamburger-menu" onclick="toggleNav()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div> 
+
+            <ul class="nav-links" id="navLinks">
+
+            <li class="has-submenu">
+                <a style="color: white; " href="#portfolio"><span><i class="fa fa-universal-access fa-1x" ></i></span> Accessibility</a>
+                <ul class="submenu">
+                    <li><a href="#accessibilitystatement" onclick="toggleAccess()">Accessibility Statement</a>
+                        <div class="popup" id="popup-1">
+                            <div class="overlay">
+                                <div class="content">
+                                    <div class="close-btn" onclick="toggleAccess()">
+                                        &times;
+                                    </div>
+                                    <textarea rows="10" cols="45"
+                                        readonly>This website adopts the Web Content Accessibility Guidelines (WCAG 2.0) as the accessibility standard for all its related web development and services. WCAG 2.0 is also an international standard, ISO 40500. This certifies it as a stable and referenceable technical standard. 
+
+                                        WCAG 2.0 contains 12 guidelines organized under 4 principles: Perceivable, Operable, Understandable, and Robust (POUR for short). There are testable success criteria for each guideline. Compliance to these criteria is measured in three levels: A, AA, or AAA. A guide to understanding and implementing Web Content Accessibility Guidelines 2.0 is available at: https://www.w3.org/TR/UNDERSTANDING-WCAG20/
+                                        
+                                        Accessibility Features
+                                        
+                                        Shortcut Keys Combination Activation Combination keys used for each browser.
+                                        
+                                            Chrome for Linux press (Alt+Shift+shortcut_key) 
+                                            Chrome for Windows press (Alt+shortcut_key) 
+                                            For Firefox press (Alt+Shift+shortcut_key) 
+                                            For Internet Explorer press (Alt+Shift+shortcut_key) then press (enter)
+                                            On Mac OS press (Ctrl+Opt+shortcut_key)
+                                        
+                                            Accessibility Statement (Combination + 0): Statement page that will show the available accessibility keys. 
+                                            Home Page (Combination + H): Accessibility key for redirecting to homepage. 
+                                            Main Content (Combination + R): Shortcut for viewing the content section of the current page. 
+                                            FAQ (Combination + Q): Shortcut for FAQ page. 
+                                            Contact (Combination + C): Shortcut for contact page or form inquiries. 
+                                            Feedback (Combination + K): Shortcut for feedback page. 
+                                            Site Map (Combination + M): Shortcut for site map (footer agency) section of the page. 
+                                            Search (Combination + S): Shortcut for search page. 
+                                        
+                                        Press esc, or click the close the button to close this dialog box.</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#tts" onclick="togglePopup('textToSpeak')">Text to Speech</a>
+                        <div class="popup" id="popup-textToSpeak">
+                            <div class="overlay">
+                                <div class="content">
+                                    <div class="close-btn" onclick="togglePopup('textToSpeak')">
+                                        &times;
+                                    </div>
+                                    <textarea id="textToSpeak" rows="10" cols="45" placeholder="Type your text here..."></textarea>
+                                    <button onClick="speakText('textToSpeak')">Speak</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li><a href="#highcontrast" onclick="toggleHighContrast()">High Contrast</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        </nav>
+
+        <section class="landingpage">
+            
+
+            <div class="left-content">
+                <h1>Adventure <br> Minalin</h1>
+                <br>
+                <button class="explore-button" onclick="goToSection(2)">Explore the Beauty of Minalin</button>
+            </div>
+            <div class="right-content">
+                <video class="video-element" autoplay loop muted playsinline poster="images/Video2.jpg">
+                    <source src="images/Video2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="LPButtons">
+                <button onclick="handleClick('Image1.jpg')">TOP 10 TOURS</button>
+                <button onclick="handleClick('Image2.jpg')">TICKETS</button>
+                <button onclick="handleClick('ImageA.jpg')">TRAVEL INFO</button>
+                <button onclick="handleClick('ImageC.jpg')">PLACES TO GO</button>
+            </div>
+            
+        </section>
+        
+        <section class="landingpage2" style="background-color:  #333;">
+
+            <div class="left-content2">
+                <h1>Best to visit in Minalin</h1>
+                <br>
+            </div>
+
+            <div class="picture-gallery">
+                
+                <img src="images/Image1.jpg" alt="Image 1">
+                <img src="images/Image2.jpg" alt="Image 2">
+                <img src="images/ImageA.jpg" alt="Image 3">
+                <img src="images/ImageC.jpg" alt="Image 4">
+            </div>
+
+            <div class="left-content2">
+                <h1>Food to try in Minalin</h1>
+                <br>
+            </div>
+
+            <div class="picture-gallery">
+                
+                <img src="images/f1.jpg" alt="Image 1">
+                <img src="images/f2.jfif" alt="Image 2">
+                <img src="images/f3.jfif" alt="Image 3">
+                <img src="images/f4.jfif" alt="Image 4">
+            </div>
+
+            <div class="left-content2">
+                <h1>People who visits Minalin</h1>
+                <br>
+            </div>
+
+            <div class="picture-gallery">
+                
+                <img src="images/p1.PNG" alt="Image 1">
+                <img src="images/p2.PNG" alt="Image 2">
+                <img src="images/p3.PNG" alt="Image 3">
+                <img src="images/p4.PNG" alt="Image 4">
+            </div>
+
+          
+         
+        </section>
+
+        <section class="landingpage2" style="background-color:  #333;">
+
+   
+
+            <div style="display: flex; width: 100%;">
+                <div style="width: 50%; text-align: center;   background-color: rgba(255, 255, 255, 0);
+                padding: 20px; border-radius: 20px;">
+                    <h1 style="font-family: 'Dancing Script', cursive; color: white; font-weight: bold;">Get in Touch</h1>
+                    <br>
+                    <div class="contact-form">
+                     
+                        <form action="submit.php" method="post">
+                            <div class="form-group">
+                                <input placeholder="Name:" type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <input placeholder="Email:" type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Message" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div style="width: 50%; background-color: black; border-radius: 10px; overflow: hidden;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61672.30920976393!2d120.64975143518637!3d14.96384977725505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396586ce075121d%3A0x7c0b779f2cc25817!2sMinalin%2C%20Pampanga!5e0!3m2!1sen!2sph!4v1693455649314!5m2!1sen!2sph"
+                        width="100%"
+                        height="500px"
+                        style="border: 0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            
+        
+          
+         
+        </section>
+
+      
+        <footer class="foot1" style="background-color: #2A292B; color: white; text-align: center; padding: 10px;   font-family: 'Roboto', sans-serif; font-weight: lighter;
+        ">
+           
+            <div class="social-icons" >
+                <a href="https://twitter.com/your_twitter_username" height="500px" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter" ></i>
+                </a>
+                <a href="https://www.facebook.com/your_facebook_page" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/your_instagram_username" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/your_github_username" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <br>
+                <br>
+                <p><b>Visit</b> Municipal Ground, San Nicolas Minalin, Pampanga</p>
+                <br>
+                <p>&copy; 2023 Minalin.com. All rights reserved.</p>
+
+            </div>
+        </footer>
+    </div>
+    </main>
+
+
+    
+ 
+
+    <script>
+            function toggleNav() {
+    var navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+    var navLinksContainer = document.querySelector(".nav-links-container");
+    navLinksContainer.classList.toggle("active");
+}
+
+function toggleAccessibility() {
+    var submenu = document.getElementById("accessibilitySubmenu");
+    if (submenu.style.display === "none") {
+        submenu.style.display = "block";
+    } else {
+        submenu.style.display = "none";
+    }
+}
+
+
+function toggleAccess() {
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+
+        function togglePopup(popupId) {
+    var popup = document.getElementById("popup-" + popupId);
+    popup.classList.toggle("active");
+}
+
+function speakText(textAreaId) {
+    var textToSpeak = document.getElementById(textAreaId).value;
+
+    // Check if the browser supports the SpeechSynthesis API
+    if ('speechSynthesis' in window) {
+        var synthesis = window.speechSynthesis;
+        var utterance = new SpeechSynthesisUtterance(textToSpeak);
+
+        // You can customize voice, rate, pitch, etc. if needed
+        utterance.voice = synthesis.getVoices()[0];
+        utterance.rate = 1.0;
+        utterance.pitch = 1.0;
+
+        synthesis.speak(utterance);
+    } else {
+        alert('Sorry, your browser does not support the SpeechSynthesis API.');
+    }
+}
+
+
+        function toggleHighContrast() {
+            document.body.classList.toggle("high-contrast");
+        }
+
+
+        // 2nd
+
+
+    
+
+        function toggleAccess2() {
+    document.getElementById("popup-12").classList.toggle("active");
+}
+
+function togglePopup2(popupId) {
+    var popup = document.getElementById("popup-" + popupId);
+    popup.classList.toggle("active");
+}
+
+function speakText2(textAreaId) {
+    var textToSpeak = document.getElementById(textAreaId).value;
+
+    if ('speechSynthesis' in window) {
+        var synthesis = window.speechSynthesis;
+        var utterance = new SpeechSynthesisUtterance(textToSpeak);
+
+        utterance.voice = synthesis.getVoices()[0];
+        utterance.rate = 1.0;
+        utterance.pitch = 1.0;
+
+        synthesis.speak(utterance);
+    } else {
+        alert('Sorry, your browser does not support the SpeechSynthesis API.');
+    }
+}
+
+function toggleHighContrast2() {
+    document.body.classList.toggle("high-contrast");
+}
+
+    </script>
+
+</body>
+</html>

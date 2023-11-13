@@ -1,0 +1,82 @@
+
+.placespage {
+    flex-wrap: wrap;
+    background-color: #83973B;
+    padding: 80px;
+    border: 0;
+    height: 250%;
+    width: 100%;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the images horizontally */
+    gap: 10px; /* Add some spacing between images */
+  }
+  
+  .image-container img {
+    max-width: 45%; /* Set a consistent width for the images */
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  section img {
+    max-width: 50%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 10px;
+  }
+  
+  .profilechurch {
+    max-width: 50%;
+      height: auto;
+      margin-left: 5%;
+      margin-bottom: 15px;
+      border-radius: 10px
+   }
+  
+  h2 {
+    font-size: 40px;
+    font-family: fantasy;
+  }
+  
+  h3 {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  p {
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  @media (max-width: 768px) {
+  .placespage{
+    height: auto;
+  }
+  }
+
+  /* css ng park */
+
+.image-container2 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allows images to wrap within the container */
+  gap: 10px; /* Adds some spacing between images */
+}
+
+.image-container2 img {
+  max-width: 40%; /* Ensures images don't exceed the container width */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes any extra spacing issues */
+}
+
+.placespage{
+  height: auto;
+}
+
+

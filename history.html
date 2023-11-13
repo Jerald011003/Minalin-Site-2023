@@ -1,0 +1,352 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+<link rel="stylesheet" href="styles.css">
+<title>Minalin</title>
+</head>
+
+<body>
+  
+    
+    <main>
+        <div class="container">
+        <nav class="navbar" style="background-color: black;">
+            <div class="logo" >
+                <h2 style="margin-right: 20px; font-weight: lighter; font-size: 20px; font-family: 'Lobster', cursive;">
+                    <a href="index.html" style="text-decoration: none; color: white;">Minalin</a>
+                </h2>
+            </div>
+            <ul class="nav-links" id="navLinks" >
+                
+                <li><a  href="index.html" onclick="closeNav()">Home</a></li>
+                <li class="has-submenu">
+                    <a href="#places">Places<span class="arrow-icon">&#9660;</span></a>
+                    <ul class="submenu">
+                        <!-- <li class="has-submenu2">
+                            <a href="#about1" class="has-arrow">Overview<span class="arrow-icon2"> &#9660;</span></a>
+                            <ul class="submenu2">
+                                <li><a href="#sub-item1">History</a></li>
+                                <li><a href="#sub-item2">Vision, Mission, Core Values, and Mandate</a></li>
+                            </ul>
+                        </li> -->
+                        <li><a href="church.html">Church</a></li>
+                        <li><a href="park.html">Park</a></li>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="coffeeshop.html">Coffee Shops</a></li>
+                        <li><a href="localfood.html">Local Food</a></li>
+                    </ul>
+                </li>
+                <li><a href="tour.html" onclick="closeNav()" >Tour</a></li>
+                <li><a href="gallery.html" onclick="closeNav()" >Gallery</a></li>
+                <li><a href="history.html"  onclick="closeNav()" class="active" >History</a></li>
+                <li><a href="municipal.html"  onclick="closeNav()">Municipality</a></li>
+                <li><a href="about.html"  onclick="closeNav()">About</a></li>
+                <li  class="search"><input ></li>
+
+                
+            </ul>
+            <div class="menu-container" >
+                <div> <ul class="nav-links2" id="navLinks">
+
+            <li class="has-submenu" onclick="toggleAccessibility()">
+                <a style="color: white; " href="#portfolio"><span><i class="fa fa-universal-access fa-1x" ></i></span> Accessibility</a>
+                <ul class="submenu" id="accessibilitySubmenu">
+                    <li><a href="#accessibilitystatement2" onclick="toggleAccess2()">Accessibility Statement</a>
+                        <div class="popup" id="popup-12">
+                            <div class="overlay">
+                                <div class="content">
+                                    <div class="close-btn" onclick="toggleAccess2()">
+                                        &times;
+                                    </div>
+                                    <textarea rows="10" cols="45"
+                                        readonly>This website adopts the Web Content Accessibility Guidelines (WCAG 2.0) as the accessibility standard for all its related web development and services. WCAG 2.0 is also an international standard, ISO 40500. This certifies it as a stable and referenceable technical standard. 
+
+                                        WCAG 2.0 contains 12 guidelines organized under 4 principles: Perceivable, Operable, Understandable, and Robust (POUR for short). There are testable success criteria for each guideline. Compliance to these criteria is measured in three levels: A, AA, or AAA. A guide to understanding and implementing Web Content Accessibility Guidelines 2.0 is available at: https://www.w3.org/TR/UNDERSTANDING-WCAG20/
+                                        
+                                        Accessibility Features
+                                        
+                                        Shortcut Keys Combination Activation Combination keys used for each browser.
+                                        
+                                            Chrome for Linux press (Alt+Shift+shortcut_key) 
+                                            Chrome for Windows press (Alt+shortcut_key) 
+                                            For Firefox press (Alt+Shift+shortcut_key) 
+                                            For Internet Explorer press (Alt+Shift+shortcut_key) then press (enter)
+                                            On Mac OS press (Ctrl+Opt+shortcut_key)
+                                        
+                                            Accessibility Statement (Combination + 0): Statement page that will show the available accessibility keys. 
+                                            Home Page (Combination + H): Accessibility key for redirecting to homepage. 
+                                            Main Content (Combination + R): Shortcut for viewing the content section of the current page. 
+                                            FAQ (Combination + Q): Shortcut for FAQ page. 
+                                            Contact (Combination + C): Shortcut for contact page or form inquiries. 
+                                            Feedback (Combination + K): Shortcut for feedback page. 
+                                            Site Map (Combination + M): Shortcut for site map (footer agency) section of the page. 
+                                            Search (Combination + S): Shortcut for search page. 
+                                        
+                                        Press esc, or click the close the button to close this dialog box.</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#tts2" onclick="togglePopup2('textToSpeak2')">Text to Speech</a>
+                        <div class="popup" id="popup-textToSpeak2">
+                            <div class="overlay">
+                                <div class="content">
+                                    <div class="close-btn" onclick="togglePopup2('textToSpeak2')">
+                                        &times;
+                                    </div>
+                                    <textarea id="textToSpeak2" rows="10" cols="45" placeholder="Type your text here..."></textarea>
+                                    <button onClick="speakText2('textToSpeak2')">Speak</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li><a href="#highcontrast2" onclick="toggleHighContrast2()">High Contrast</a></li>
+                </ul>
+            </li>
+        </ul></div>
+                <div  class="menu-label" >Menu</div>
+                <div class="hamburger-menu" onclick="toggleNav()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div> 
+
+            <ul class="nav-links" id="navLinks">
+
+            <li class="has-submenu">
+                <a style="color: white; " href="#portfolio"><span><i class="fa fa-universal-access fa-1x" ></i></span> Accessibility</a>
+                <ul class="submenu">
+                    <li><a href="#accessibilitystatement" onclick="toggleAccess()">Accessibility Statement</a>
+                        <div class="popup" id="popup-1">
+                            <div class="overlay">
+                                <div class="content">
+                                    <div class="close-btn" onclick="toggleAccess()">
+                                        &times;
+                                    </div>
+                                    <textarea rows="10" cols="45"
+                                        readonly>This website adopts the Web Content Accessibility Guidelines (WCAG 2.0) as the accessibility standard for all its related web development and services. WCAG 2.0 is also an international standard, ISO 40500. This certifies it as a stable and referenceable technical standard. 
+
+                                        WCAG 2.0 contains 12 guidelines organized under 4 principles: Perceivable, Operable, Understandable, and Robust (POUR for short). There are testable success criteria for each guideline. Compliance to these criteria is measured in three levels: A, AA, or AAA. A guide to understanding and implementing Web Content Accessibility Guidelines 2.0 is available at: https://www.w3.org/TR/UNDERSTANDING-WCAG20/
+                                        
+                                        Accessibility Features
+                                        
+                                        Shortcut Keys Combination Activation Combination keys used for each browser.
+                                        
+                                            Chrome for Linux press (Alt+Shift+shortcut_key) 
+                                            Chrome for Windows press (Alt+shortcut_key) 
+                                            For Firefox press (Alt+Shift+shortcut_key) 
+                                            For Internet Explorer press (Alt+Shift+shortcut_key) then press (enter)
+                                            On Mac OS press (Ctrl+Opt+shortcut_key)
+                                        
+                                            Accessibility Statement (Combination + 0): Statement page that will show the available accessibility keys. 
+                                            Home Page (Combination + H): Accessibility key for redirecting to homepage. 
+                                            Main Content (Combination + R): Shortcut for viewing the content section of the current page. 
+                                            FAQ (Combination + Q): Shortcut for FAQ page. 
+                                            Contact (Combination + C): Shortcut for contact page or form inquiries. 
+                                            Feedback (Combination + K): Shortcut for feedback page. 
+                                            Site Map (Combination + M): Shortcut for site map (footer agency) section of the page. 
+                                            Search (Combination + S): Shortcut for search page. 
+                                        
+                                        Press esc, or click the close the button to close this dialog box.</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#tts" onclick="togglePopup('textToSpeak')">Text to Speech</a>
+                        <div class="popup" id="popup-textToSpeak">
+                            <div class="overlay">
+                                <div class="content">
+                                    <div class="close-btn" onclick="togglePopup('textToSpeak')">
+                                        &times;
+                                    </div>
+                                    <textarea id="textToSpeak" rows="10" cols="45" placeholder="Type your text here..."></textarea>
+                                    <button onClick="speakText('textToSpeak')">Speak</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li><a href="#highcontrast" onclick="toggleHighContrast()">High Contrast</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav>
+
+ 
+
+        <section class="thepage2">
+            <div class="history-info">
+                <h2>History of Minalin</h2>
+                <p>
+                    Minalin, officially the Municipality of Minalin (Kapampangan: Balen ning Minalin; Filipino: Bayan ng Minalin), is a 4th class municipality in the province of Pampanga, Philippines. According to the 2020 census, it has a population of 48,380 people.[3]
+
+Originally known as Minalis, it has a land area of about 48.27 km2 (18.64 sq mi), and it is located south-west of the capital city of San Fernando.
+                </p>
+
+                <br>
+
+                <p>A Malayan settlement of Kahn Bulaun, Prince Balagtas' descendant, also found in the place, beautiful women. The Spaniards called the sitio, "mina linda de las mujerers" (a mine of beautiful women), which could also be the source of the town's name. Subsequently, Chinese traders abbreviated the words to "Minalin".
+
+                    Minalin's name might have originated also from "minalis" ("to move to"). "Mina" means mine, a word written on a rock left at the sitio in 1700 by a Spaniard José Espeleta, and "Lin", the founder's name.</p>
+              
+                <br>
+
+                <p>
+                    Gobernadorcillo (Mayor) Diego Tolentino wrote Minalin in lieu of Minalis and the Calendario Manual y Guia de Forasteros, 1839 to 1841, spelled Minalin, thus Minalin.
+
+In 1860 Minalin was a producer of rice, corn, sugar cane, cacao, indigo (añil) and fruits, including dye, nipa wine, vinegar and mats (petates).
+                </p>
+
+                <br>
+
+                <p>
+                    In 1860 Minalin was a producer of rice, corn, sugar cane, cacao, indigo (añil) and fruits, including dye, nipa wine, vinegar and mats (petates).
+                </p>
+                </div>
+        
+            <div class="history-links">
+                <h3>Explore Further</h3>
+                <ul>
+                    <br>
+                    <li><a href="https://en.wikipedia.org/wiki/Minalin#:~:text=A%20Malayan%20settlement%20of%20Kahn,the%20words%20to%20%22Minalin%22.">Further History</a></li>
+                    <li><a href="https://scribd.com/document/337617406/History-of-Minalin-1953">Historical Landmarks</a></li>
+                </ul>
+            </div>
+        
+     
+        </section>
+        
+            
+    <footer class="foot1" style="background-color: #2A292B; color: white; text-align: center; padding: 10px;   font-family: 'Roboto', sans-serif; font-weight: lighter;
+    ">
+       
+        <div class="social-icons" >
+            <a href="https://twitter.com/your_twitter_username" height="500px" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter" ></i>
+            </a>
+            <a href="https://www.facebook.com/your_facebook_page" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/your_instagram_username" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/your_github_username" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <br>
+            <br>
+            <p><b>Visit</b> Municipal Ground, San Nicolas Minalin, Pampanga</p>
+            <br>
+            <p>&copy; 2023 Minalin.com. All rights reserved.</p>
+
+        </div>
+    </footer>
+
+    </div>
+    </main>
+
+
+    
+ 
+
+    <script>
+            function toggleNav() {
+    var navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
+    var navLinksContainer = document.querySelector(".nav-links-container");
+    navLinksContainer.classList.toggle("active");
+}
+
+function toggleAccessibility() {
+    var submenu = document.getElementById("accessibilitySubmenu");
+    if (submenu.style.display === "none") {
+        submenu.style.display = "block";
+    } else {
+        submenu.style.display = "none";
+    }
+}
+
+
+function toggleAccess() {
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+
+        function togglePopup(popupId) {
+    var popup = document.getElementById("popup-" + popupId);
+    popup.classList.toggle("active");
+}
+
+function speakText(textAreaId) {
+    var textToSpeak = document.getElementById(textAreaId).value;
+
+    // Check if the browser supports the SpeechSynthesis API
+    if ('speechSynthesis' in window) {
+        var synthesis = window.speechSynthesis;
+        var utterance = new SpeechSynthesisUtterance(textToSpeak);
+
+        // You can customize voice, rate, pitch, etc. if needed
+        utterance.voice = synthesis.getVoices()[0];
+        utterance.rate = 1.0;
+        utterance.pitch = 1.0;
+
+        synthesis.speak(utterance);
+    } else {
+        alert('Sorry, your browser does not support the SpeechSynthesis API.');
+    }
+}
+
+
+        function toggleHighContrast() {
+            document.body.classList.toggle("high-contrast");
+        }
+
+
+        // 2nd
+
+
+    
+
+        function toggleAccess2() {
+    document.getElementById("popup-12").classList.toggle("active");
+}
+
+function togglePopup2(popupId) {
+    var popup = document.getElementById("popup-" + popupId);
+    popup.classList.toggle("active");
+}
+
+function speakText2(textAreaId) {
+    var textToSpeak = document.getElementById(textAreaId).value;
+
+    if ('speechSynthesis' in window) {
+        var synthesis = window.speechSynthesis;
+        var utterance = new SpeechSynthesisUtterance(textToSpeak);
+
+        utterance.voice = synthesis.getVoices()[0];
+        utterance.rate = 1.0;
+        utterance.pitch = 1.0;
+
+        synthesis.speak(utterance);
+    } else {
+        alert('Sorry, your browser does not support the SpeechSynthesis API.');
+    }
+}
+
+function toggleHighContrast2() {
+    document.body.classList.toggle("high-contrast");
+}
+
+    </script>
+
+</body>
+</html>
