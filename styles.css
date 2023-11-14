@@ -135,12 +135,13 @@
 }
 
 .submenu {
+
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   background-color: white; 
-  margin-top: 13px;
+  margin-top: 8px;
   list-style: none;
   z-index: 1; 
 }
@@ -241,7 +242,7 @@
   }
 
   .submenu{
-    transform: translate(-0%, -10%); /* Center the submenu both horizontally and vertically */
+    transform: translate(-0%, -15%); /* Center the submenu both horizontally and vertically */
     border: 2px solid black;
     margin-top: 40px;
 
@@ -344,7 +345,7 @@
   }
 
   .submenu{
-    transform: translate(-0%, -10%); /* Center the submenu both horizontally and vertically */
+    transform: translate(-0%, -15%); /* Center the submenu both horizontally and vertically */
     border: 2px solid black;
     padding: 0px;
     margin-top: 40px;
