@@ -54,7 +54,7 @@
                 <li><a style="color: white;" href="about.html"  onclick="closeNav()">About</a></li>
 
                 
-                <li  class="search"><input placeholder="Jerald so Handsome"></li>
+                <li  class="search"><input></li>
 
                 
             </ul>
@@ -396,11 +396,21 @@ function speakText(textAreaId) {
         function toggleAccess2() {
     document.getElementById("popup-12").classList.toggle("active");
 }
-
 function togglePopup2(popupId) {
     var popup = document.getElementById("popup-" + popupId);
-    popup.classList.toggle("active");
+    var isActive = popup.classList.contains("active");
+
+    if (!isActive) {
+        // Open the popup if it's not active
+        popup.classList.add("active");
+    }
 }
+
+function closePopup2(popupId) {
+    var popup = document.getElementById("popup-" + popupId);
+    popup.classList.remove("active");
+}
+
 
 function speakText2(textAreaId) {
     var textToSpeak = document.getElementById(textAreaId).value;

@@ -436,7 +436,7 @@
 @media (max-width: 360px) {
 
   .submenu{
-    transform: translate(-15%, -5%); /* Center the submenu both horizontally and vertically */
+    transform: translate(-15%, -15%); /* Center the submenu both horizontally and vertically */
     border: 2px solid black;
     padding: 0px 3px;
 
