@@ -423,6 +423,16 @@
 
   
 }
+.barangays-list {
+  list-style: disc; /* Use disc for bullet points */
+  margin-left: 20px; /* Adjust the margin as needed */
+  columns: 3; /* Specify the number of columns */
+}
+
+.barangays-list li {
+  margin-bottom: 8px; /* Adjust the margin between list items */
+}
+
 
   .nav-links a {
     display: block;
@@ -722,7 +732,7 @@ body.high-contrast {
   align-items: center;
   height: 100%;
   width: 100%;
-  background-image: url('images/ImageF.jpg'); 
+  background-image: url('images/New.jpg'); 
   background-size: cover; 
   background-repeat: no-repeat; 
   background-attachment: fixed; 
