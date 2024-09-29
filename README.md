@@ -22,4 +22,3 @@ The Minalin Tourism Website is a simple yet elegant platform designed to showcas
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/jerald011003/Minalin-Site-2023.git
-   cd minalin-tourism-site
